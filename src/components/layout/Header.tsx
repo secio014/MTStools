@@ -24,7 +24,7 @@ export function Header() {
   return (
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-zinc-950/90 backdrop-blur-md border-b border-yellow-600/20 py-2' : 'bg-transparent py-4'
+        isScrolled ? 'bg-mts-black/95 backdrop-blur-md border-b border-mts-yellow/20 py-2' : 'bg-transparent py-4'
       }`}
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
@@ -42,12 +42,12 @@ export function Header() {
               className="text-zinc-300 hover:text-yellow-500 font-medium transition-colors text-sm uppercase tracking-wider relative group"
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-mts-yellow transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
           <a 
             href="#contact" 
-            className="px-5 py-2 bg-gradient-to-r from-yellow-600 to-yellow-700 text-white text-sm font-bold rounded-full shadow-lg shadow-yellow-600/20 hover:shadow-yellow-600/40 transform hover:-translate-y-0.5 transition-all"
+            className="px-5 py-2 bg-gradient-to-r from-mts-yellow to-yellow-500 text-mts-black text-sm font-bold rounded-full shadow-lg shadow-mts-yellow/20 hover:shadow-mts-yellow/40 transform hover:-translate-y-0.5 transition-all"
           >
             Orçamento
           </a>
@@ -69,7 +69,7 @@ export function Header() {
             <a 
               key={link.name} 
               href={link.href}
-              className="text-zinc-300 hover:text-yellow-500 py-2 border-b border-zinc-800/50"
+              className="text-zinc-300 hover:text-mts-yellow py-2 border-b border-zinc-800/50"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}

@@ -4,6 +4,7 @@ import { Hero } from '../components/sections/Hero';
 import { About } from '../components/sections/About';
 import { Products } from '../components/sections/Products';
 import { Contact } from '../components/sections/Contact';
+import { MachiningCalculator } from '../components/widgets/MachiningCalculator';
 
 export function Home() {
   return (
@@ -11,6 +12,7 @@ export function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <MachiningCalculator />
         <About />
         <Products />
         <Contact />

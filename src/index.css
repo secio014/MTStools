@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+
+@theme {
+  --color-mts-yellow: #FFCD11;
+  --color-mts-black: #101820;
+  --color-mts-gray: #2D2D2D;
+  --font-sans: Inter, sans-serif;
+}
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-zinc-950 text-white font-sans antialiased;
+    @apply bg-mts-black text-white font-sans antialiased;
   }
 }
 
@@ -18,11 +24,11 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  @apply bg-zinc-900;
+  @apply bg-mts-black;
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-yellow-600/50 rounded;
+  @apply bg-mts-yellow/50 rounded;
 }
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-yellow-600;
+  @apply bg-mts-yellow;
 }
